@@ -32,10 +32,20 @@
 
 ### Deliverables 
 
-<!-- 1. Make a fetch to retrieve the dinos from the server, and execute it in a `DOMContentLoaded` event listener. -->
-<!-- 2. Load the species of each dino into `<li>` elements, and append them into the `.dino-menu` div already on the DOM. -->
+1. Make a fetch to retrieve the dinos from the server, and execute it in a `DOMContentLoaded` event listener.
+2. Load the species of each dino into `<li>` elements, and append them into the `.dino-menu` div already on the DOM.
 3. Add event listeners to the dino sepcieses that load their info into the `.dino-info` div.
 4. Add an `h1` tag for the name, `img` tag for the image, `p` tag for the dino's exitiction status, and a button to toggle that status. Make sure to only show one dino's info in the `.dino-info` div at a time.
 5. Add an event listener to the status button that makes a fetch to the data base to update the dino's exiction status, and persist it.
 
 ### Important Notes:
+
+* In this case, a "dumb" database is just a `db.json` file that containts a simple javascript object we're using as a database. We use `json-server` to point a local server at the `db.json` file.
+* We are using this json server the same way we used our postgres data base and suby controll methods to retrieve data from the data base and put it on the page.
+* `.forEach()` can be syntactically executed very closely to how we used `.each` in ruby.
+* When we make changes to our app with Javascript, it happens in two steps:
+  1. We need to change the data in the server with a `fetch()`
+  2. We need to manipulate the DOM to change what shows on the page.
+* Pessemistic Rendering: Server first, then DOM
+* Optimistic Rendering: DOM first, then server
+
