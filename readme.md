@@ -32,9 +32,9 @@
 
 ### Deliverables 
 
-1. Make a fetch to retrieve the dinos from the server, and execute it in a `DOMContentLoaded` event listener.
-2. Load the names of each dino into `<li>` elements, and append them into the `.dino-menu` div already on the DOM.
-3. Add event listeners to the dino names that load their info into the `.dino-info` div.
+<!-- 1. Make a fetch to retrieve the dinos from the server, and execute it in a `DOMContentLoaded` event listener. -->
+<!-- 2. Load the species of each dino into `<li>` elements, and append them into the `.dino-menu` div already on the DOM. -->
+3. Add event listeners to the dino sepcieses that load their info into the `.dino-info` div.
 4. Add an `h1` tag for the name, `img` tag for the image, `p` tag for the dino's exitiction status, and a button to toggle that status. Make sure to only show one dino's info in the `.dino-info` div at a time.
 5. Add an event listener to the status button that makes a fetch to the data base to update the dino's exiction status, and persist it.
 
