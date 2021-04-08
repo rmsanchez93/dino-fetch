@@ -42,6 +42,14 @@ body {
   border-radius: 8px;
   text-align: center;
 } 
+.dino-form-container{
+  border: 1px solid black;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+
+}
 
 img {
   width: 200px;

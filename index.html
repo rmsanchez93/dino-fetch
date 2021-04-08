@@ -5,15 +5,32 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <script type="text/javascript" src="src/index.js"></script>
+    <script type="text/javascript" src="src/newIndex.js" defer ></script>
   </head>
 
   <body>
     <div class="container">
       <div class="header">
         <h1 class="title">Dino Exitinction Tracker</h1>
+        <button id='show-form'>Toggle New Dino Form</button>
       </div>
 
       <div class="content">
+
+        <div class="dino-form-container" style="display:none;">
+          <h1>Add a New Dino!</h1>
+          <hr/>
+          <form class="dino-form" >
+            <label>Dino Species</label>
+            <input id ="new-dino-species" type="text"/>
+            <br>
+            <br>
+            <label>Dino Image</label>
+            <input id ="new-dino-image" type="text"/>
+            <br>
+            <button type=submit>Submit</button>
+          </form>
+        </div>
 
         <div class="dino-menu">
           <h1>All the Dinos</h1>
